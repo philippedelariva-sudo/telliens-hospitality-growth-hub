@@ -33,12 +33,11 @@ function About() {
         <p className="eyebrow">Leadership team</p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {team.map((t) => (
-            <article key={t.name} className="rounded-lg border bg-card p-8">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-brand font-display text-3xl text-primary-foreground">{t.name[0]}</div>
-              <h2 className="mt-5 text-4xl">{t.name}</h2>
-              <p className="font-semibold text-primary">{t.role}</p>
+            <article key={t.name} className="flex h-full flex-col rounded-lg border bg-card p-6 md:p-8">
+              <h2 className="text-4xl">{t.name}</h2>
+              <p className="mt-1 font-semibold text-primary">{t.role}</p>
               <p className="mt-4 text-muted-foreground">{t.bio}</p>
-              <ul className="mt-6 flex flex-wrap gap-2">
+              <ul className="mt-auto flex flex-wrap gap-2 pt-6">
                 {t.facts.map((f) => <li key={f} className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">{f}</li>)}
               </ul>
             </article>
