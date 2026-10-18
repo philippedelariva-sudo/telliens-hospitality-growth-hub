@@ -1,0 +1,2 @@
+- [x] Clean redesign inspired by partnrmedia.com
+- [ ] Home link in menu + bigger logo

@@ -3,6 +3,7 @@ import logo from "@/assets/telliens-logo.png.asset.json";
 import { CALENDLY, EMAIL } from "@/lib/content";
 
 const nav = [
+  { to: "/", label: "Home" },
   { to: "/workshops", label: "Workshops" },
   { to: "/audit", label: "Audit" },
   { to: "/about", label: "About" },
@@ -14,11 +15,11 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center">
-          <img src={logo.url} alt="Telliens" className="h-14 w-auto" />
+          <img src={logo.url} alt="Telliens" className="h-20 w-auto md:h-24" />
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
           {nav.map((n) => (
-            <Link key={n.to} to={n.to} className="text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground" }}>
+            <Link key={n.to} to={n.to} className="text-muted-foreground transition-colors hover:text-foreground" activeOptions={{ exact: true }} activeProps={{ className: "text-primary font-semibold" }}>
               {n.label}
             </Link>
           ))}
