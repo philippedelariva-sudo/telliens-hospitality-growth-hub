@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CtaBand } from "@/components/SiteChrome";
-import { CALENDLY, workshops } from "@/lib/content";
+import { CALENDLY } from "@/lib/content";
 import hero from "@/assets/hero-lobby.jpg";
 
 export const Route = createFileRoute("/")({
@@ -60,14 +60,6 @@ function Index() {
           </div>
           <Link to="/workshops" className="font-semibold text-primary">See all details →</Link>
         </div>
-        <ul className="mt-12 divide-y border-y">
-          {workshops.map((w, i) => (
-            <li key={w.title} className="group flex items-baseline gap-6 py-5">
-              <span className="w-8 text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
-              <span className="font-display text-2xl transition-colors group-hover:text-primary md:text-3xl">{w.title}</span>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-6 px-6 md:grid-cols-2">
