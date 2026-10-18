@@ -18,21 +18,23 @@ function Index() {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div className="absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full bg-gradient-brand opacity-20 blur-3xl" />
-        <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-20 md:pt-28">
+        <img src={hero} alt="Hotel receptionist welcoming a guest" width={1920} height={912} className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-background/75" />
+        <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-24 text-center md:py-32">
           <p className="eyebrow">Hospitality consulting</p>
-          <h1 className="mt-5 max-w-4xl text-5xl leading-[1.05] md:text-7xl">
-            Your guests judge the property by how your team makes them feel. Your owners judge it by <span className="text-gradient">the numbers that follow.</span>
-          </h1>
-          <p className="mt-8 max-w-2xl text-lg text-muted-foreground">
-            We run 2 to 5 day on-site workshops that improve both, working hands-on with your staff and management team.
+          <h1 className="mt-5 text-4xl leading-tight md:text-6xl">Hotel workshops &amp; service audits</h1>
+          <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+            Your guests judge the property by how your team makes them feel. Your owners judge it by the numbers that follow.
           </p>
-          <div className="mt-10 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
             <a href={CALENDLY} target="_blank" rel="noreferrer" className="btn-primary">Book a 30-min call</a>
-            <Link to="/workshops" className="btn-ghost">Explore workshops</Link>
+            <Link to="/workshops" className="btn-ghost bg-background">Explore workshops</Link>
           </div>
         </div>
       </section>
+      <p className="mx-auto max-w-3xl px-6 py-14 text-center text-xl italic text-muted-foreground md:text-2xl">
+        We run 2 to 5 day on-site workshops, working hands-on with your staff and management team.
+      </p>
 
       <section className="border-y bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
