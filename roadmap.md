@@ -1,0 +1,3 @@
+- [x] Clean redesign inspired by partnrmedia.com
+- [x] Home link in menu + bigger logo
+- [x] Remove all em dashes

@@ -4,9 +4,9 @@ import { CtaBand } from "@/components/SiteChrome";
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "Hotel Service Audit — Telliens" },
+      { title: "Hotel Service Audit | Telliens" },
       { name: "description", content: "An in-house hotel service standards audit covering arrival to departure, dining included, with a detailed report." },
-      { property: "og:title", content: "Hotel Service Audit — Telliens" },
+      { property: "og:title", content: "Hotel Service Audit | Telliens" },
       { property: "og:description", content: "Find the moments that decide whether guests come back." },
     ],
   }),
@@ -35,7 +35,7 @@ function Audit() {
           <p>The Telliens audit is built on a format developed in house specifically for hotel service standards, rather than a generic checklist. It looks at the full guest experience, from arrival to departure, including the restaurant and dining experience where applicable, and rates how the property performs.</p>
           <p>Every audit concludes with a detailed report outlining what was found and where the opportunities are.</p>
         </div>
-        <div className="rounded-3xl border bg-card p-8">
+        <div className="rounded-lg border bg-card p-8">
           <h2 className="text-3xl">What it covers</h2>
           <ul className="mt-6 space-y-4">
             {covers.map((c) => (

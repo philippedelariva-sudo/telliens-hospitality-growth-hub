@@ -4,7 +4,7 @@ import { CtaBand } from "@/components/SiteChrome";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Telliens — Phil & Max" },
+      { title: "About Telliens | Phil & Max" },
       { name: "description", content: "Telliens was founded by Phil and Max, bringing education and hotel operations together for hospitality training." },
       { property: "og:title", content: "About Telliens" },
       { property: "og:description", content: "Our story and leadership team." },
@@ -26,14 +26,14 @@ function About() {
         <h1 className="mt-4 max-w-3xl text-5xl md:text-6xl">Born from a shared <span className="text-gradient">love of hotels.</span></h1>
         <div className="mt-10 grid gap-8 text-lg text-muted-foreground md:grid-cols-2">
           <p>Phil and Max first crossed paths while traveling and staying in properties across different cities, and kept noticing the same thing: how much a well trained staff can shape a guest's stay.</p>
-          <p>They took what they'd each learned from years on different sides of the hotel industry and built something practical — a way to help hotel staff learn the skills and tricks of the trade that let them do their best work. That became Telliens.</p>
+          <p>They took what they'd each learned from years on different sides of the hotel industry and built something practical: a way to help hotel staff learn the skills and tricks of the trade that let them do their best work. That became Telliens.</p>
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-20">
         <p className="eyebrow">Leadership team</p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {team.map((t) => (
-            <article key={t.name} className="rounded-3xl border bg-card p-8">
+            <article key={t.name} className="rounded-lg border bg-card p-8">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-brand font-display text-3xl text-primary-foreground">{t.name[0]}</div>
               <h2 className="mt-5 text-4xl">{t.name}</h2>
               <p className="font-semibold text-primary">{t.role}</p>
