@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Telliens | Hotel Staff Workshops & Service Audits" },
-      { name: "description", content: "2 to 5 day on-site hotel workshops and service audits that lift guest experience and the numbers that follow." },
+      { name: "description", content: "On-site hotel workshops and service audits that lift guest experience and the numbers that follow." },
       { property: "og:title", content: "Telliens | Hotel Staff Workshops & Service Audits" },
       { property: "og:description", content: "Hands-on hospitality training with your staff and management team." },
     ],
@@ -36,15 +36,15 @@ function Index() {
         </div>
       </section>
       <p className="mx-auto max-w-3xl px-6 py-14 text-center text-xl italic text-muted-foreground md:text-2xl">
-        We run 2 to 5 day on-site workshops, working hands-on with your staff and management team.
+        We run on-site workshops, working hands-on with your staff and management team.
       </p>
 
       <section className="border-y bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3 text-center">
           {[
-            ["2 to 5 days", "On-site workshops, also offered online"],
+            ["Customized", "Workshops and audits tailored to each property"],
+            ["Hands-on", "On-the-floor delivery with staff and management"],
             ["15 to 30", "Participants per session, more on request"],
-            ["All brands", "Hotels of every brand and size"],
           ].map(([k, v]) => (
             <div key={k}>
               <p className="font-display text-4xl text-gradient">{k}</p>
