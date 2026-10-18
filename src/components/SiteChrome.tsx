@@ -54,7 +54,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row">
         <img src={logo.url} alt="Telliens" className="h-10 w-auto" />
         <p>Hotel workshops & service audits · <a className="hover:text-foreground" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
-        <p>© {new Date().getFullYear()} Telliens</p>
+        <p className="text-center">© {new Date().getFullYear()} Telliens. All rights reserved. · <Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></p>
       </div>
     </footer>
   );
