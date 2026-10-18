@@ -35,7 +35,7 @@ export function Header() {
 export function CtaBand() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
-      <div className="rounded-3xl bg-ink p-10 text-ink-foreground md:p-16">
+      <div className="rounded-lg bg-ink p-10 text-ink-foreground md:p-16">
         <p className="eyebrow">Let's talk</p>
         <h2 className="mt-3 max-w-2xl text-4xl md:text-5xl">Interested in what we can do for <span className="text-gradient">your property?</span></h2>
         <div className="mt-8 flex flex-wrap gap-3">

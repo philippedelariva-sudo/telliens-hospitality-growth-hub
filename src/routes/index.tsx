@@ -68,13 +68,13 @@ function Index() {
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-6 px-6 md:grid-cols-2">
-        <div className="rounded-3xl border bg-card p-10">
+        <div className="rounded-lg border bg-card p-10">
           <p className="eyebrow">Workshops</p>
           <h3 className="mt-3 text-3xl">We show up in person.</h3>
           <p className="mt-4 text-muted-foreground">We work alongside your team and focus on building habits that last. Created by OCT certified professionals.</p>
           <Link to="/workshops" className="mt-6 inline-block font-semibold text-primary">Workshops →</Link>
         </div>
-        <div className="rounded-3xl bg-secondary p-10">
+        <div className="rounded-lg bg-secondary p-10">
           <p className="eyebrow">Audits</p>
           <h3 className="mt-3 text-3xl">See your stay through a guest's eyes.</h3>
           <p className="mt-4 text-muted-foreground">An in-house audit format for hotel service standards, from arrival to departure, with a detailed report.</p>

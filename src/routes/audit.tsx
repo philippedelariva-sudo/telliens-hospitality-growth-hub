@@ -35,7 +35,7 @@ function Audit() {
           <p>The Telliens audit is built on a format developed in house specifically for hotel service standards, rather than a generic checklist. It looks at the full guest experience, from arrival to departure, including the restaurant and dining experience where applicable, and rates how the property performs.</p>
           <p>Every audit concludes with a detailed report outlining what was found and where the opportunities are.</p>
         </div>
-        <div className="rounded-3xl border bg-card p-8">
+        <div className="rounded-lg border bg-card p-8">
           <h2 className="text-3xl">What it covers</h2>
           <ul className="mt-6 space-y-4">
             {covers.map((c) => (
