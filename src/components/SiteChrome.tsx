@@ -14,7 +14,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center">
-          <img src={logo.url} alt="Telliens" className="h-12 w-auto" />
+          <img src={logo.url} alt="Telliens" className="h-14 w-auto" />
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
           {nav.map((n) => (

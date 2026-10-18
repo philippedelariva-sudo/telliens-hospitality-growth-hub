@@ -38,7 +38,7 @@ function Index() {
       </p>
 
       <section className="border-y bg-card">
-        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3 text-center">
           {[
             ["2–5 days", "On-site workshops, also offered online"],
             ["15–30", "Participants per session, more on request"],
@@ -53,7 +53,7 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-col items-center gap-4 text-center">
           <div>
             <p className="eyebrow">Training sessions we host</p>
             <h2 className="mt-3 text-4xl md:text-5xl">Built for the floor, not the boardroom.</h2>
