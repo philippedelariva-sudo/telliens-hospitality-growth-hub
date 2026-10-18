@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CtaBand } from "@/components/SiteChrome";
 import { CALENDLY, workshops } from "@/lib/content";
 import hero from "@/assets/hero-lobby.jpg";
-import logo from "@/assets/telliens-logo.png.asset.json";
+import logo from "@/assets/telliens-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +23,7 @@ function Index() {
         <img src={hero} alt="Hotel receptionist welcoming a guest" width={1920} height={912} className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-background/75" />
         <div className="relative mx-auto flex max-w-4xl flex-col items-center px-6 py-24 text-center md:py-32">
-          <img src={logo.url} alt="Telliens" className="mb-6 h-40 w-auto mix-blend-multiply md:h-56" />
+          <img src={logo} alt="Telliens" className="mb-8 h-28 w-auto md:h-36" />
           <p className="eyebrow">Hospitality consulting</p>
           <h1 className="mt-5 text-4xl leading-tight md:text-6xl">Hotel workshops &amp; service audits</h1>
           <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">

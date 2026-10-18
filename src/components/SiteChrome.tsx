@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/telliens-logo.png.asset.json";
+import logo from "@/assets/telliens-logo.png";
 import { CALENDLY, EMAIL } from "@/lib/content";
 
 const nav = [
@@ -15,7 +15,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center">
-          <img src={logo.url} alt="Telliens" className="h-20 w-auto md:h-24" />
+          <img src={logo} alt="Telliens" className="h-12 w-auto md:h-14" />
         </Link>
         <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
           {nav.map((n) => (
@@ -52,7 +52,7 @@ export function Footer() {
   return (
     <footer className="border-t">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row">
-        <img src={logo.url} alt="Telliens" className="h-10 w-auto" />
+        <img src={logo} alt="Telliens" className="h-8 w-auto" />
         <p>Hotel workshops & service audits · <a className="hover:text-foreground" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
         <p className="text-center">© {new Date().getFullYear()} Telliens. All rights reserved. · <Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></p>
       </div>
