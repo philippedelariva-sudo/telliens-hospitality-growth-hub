@@ -38,7 +38,7 @@ function About() {
             <article key={t.name} className="flex h-full flex-col rounded-lg border bg-card p-6 md:p-8">
               <h2 className="text-4xl">{t.name}</h2>
               <p className="mt-1 font-semibold text-primary">{t.role}</p>
-              <img src={t.photo} alt={t.name} className="mt-6 aspect-[4/5] w-56 rounded-lg object-cover object-top shadow-soft md:w-64" />
+              <img src={t.photo} alt={t.name} className="mt-6 aspect-[2/3] w-56 rounded-lg object-cover object-top shadow-soft md:w-64" />
               <p className="mt-4 text-muted-foreground">{t.bio}</p>
               <ul className="mt-auto flex flex-wrap gap-2 pt-6">
                 {t.facts.map((f) => <li key={f} className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">{f}</li>)}
