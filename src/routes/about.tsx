@@ -15,7 +15,7 @@ export const Route = createFileRoute("/about")({
 
 const team = [
   { name: "Phil", role: "Co-Founder & Workshop Coordinator", bio: "A background in education, applied directly to hospitality training. That foundation shapes how every Telliens workshop is structured and delivered, while hands-on experience across three hotel brands keeps it grounded in what actually happens on the floor.", facts: ["Bachelor of Arts, Psychology", "Bachelor of Education", "OCT certified teacher", "Teaching across 4 school boards", "3 hotel brands across North America", "Bilingual (English/French)"] },
-  { name: "Max", role: "Co-Founder", bio: "Several years in hotel operations across front office, guest services and rooms at properties in Canada and Europe. Special-services work at the Olympic Games shapes an approach to training that holds up when things get busy.", facts: ["Hospitality management training", "Business degree", "6+ years in rooms operations & guest services", "8 hotel brands, two continents", "Olympic Games special services", "Bilingual (English/French)"] },
+  { name: "Max", role: "Co-Founder", bio: "Several years in hotel operations across front office, guest services and rooms at properties in Canada and Europe. Special-services work at the Olympic Games shapes an approach to training that holds up when things get busy.", facts: ["6+ years in rooms operations & guest services", "8 hotel brands, two continents", "Olympic Games special services", "Bilingual (English/French)"] },
 ];
 
 function About() {
