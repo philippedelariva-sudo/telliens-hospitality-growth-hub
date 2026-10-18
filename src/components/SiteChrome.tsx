@@ -51,9 +51,8 @@ export function CtaBand() {
 export function Footer() {
   return (
     <footer className="border-t">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row">
-        <img src={logo} alt="Telliens" className="h-12 w-auto md:h-14" />
-        <p>Hotel workshops & service audits · <a className="hover:text-foreground" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 items-center justify-items-center gap-4 px-6 py-8 text-base text-muted-foreground md:grid-cols-3">
+        <img src={logo} alt="Telliens" className="h-12 w-auto md:h-14 md:justify-self-start" />
         <p className="text-center">© {new Date().getFullYear()} Telliens. All rights reserved. · <Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></p>
       </div>
     </footer>
