@@ -4,7 +4,7 @@ import { CALENDLY, EMAIL } from "@/lib/content";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Telliens — Book a Call" },
+      { title: "Contact Telliens | Book a Call" },
       { name: "description", content: "Book a 30-minute call with Telliens or email phil@telliens.com to discuss your property." },
       { property: "og:title", content: "Contact Telliens" },
       { property: "og:description", content: "Book a 30-minute call about your property." },

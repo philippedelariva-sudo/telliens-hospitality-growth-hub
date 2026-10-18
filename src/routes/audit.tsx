@@ -4,9 +4,9 @@ import { CtaBand } from "@/components/SiteChrome";
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "Hotel Service Audit — Telliens" },
+      { title: "Hotel Service Audit | Telliens" },
       { name: "description", content: "An in-house hotel service standards audit covering arrival to departure, dining included, with a detailed report." },
-      { property: "og:title", content: "Hotel Service Audit — Telliens" },
+      { property: "og:title", content: "Hotel Service Audit | Telliens" },
       { property: "og:description", content: "Find the moments that decide whether guests come back." },
     ],
   }),

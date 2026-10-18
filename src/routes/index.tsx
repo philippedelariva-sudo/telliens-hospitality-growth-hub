@@ -7,9 +7,9 @@ import logo from "@/assets/telliens-logo.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Telliens — Hotel Staff Workshops & Service Audits" },
+      { title: "Telliens | Hotel Staff Workshops & Service Audits" },
       { name: "description", content: "2 to 5 day on-site hotel workshops and service audits that lift guest experience and the numbers that follow." },
-      { property: "og:title", content: "Telliens — Hotel Staff Workshops & Service Audits" },
+      { property: "og:title", content: "Telliens | Hotel Staff Workshops & Service Audits" },
       { property: "og:description", content: "Hands-on hospitality training with your staff and management team." },
     ],
   }),
@@ -42,8 +42,8 @@ function Index() {
       <section className="border-y bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3 text-center">
           {[
-            ["2–5 days", "On-site workshops, also offered online"],
-            ["15–30", "Participants per session, more on request"],
+            ["2 to 5 days", "On-site workshops, also offered online"],
+            ["15 to 30", "Participants per session, more on request"],
             ["All brands", "Hotels of every brand and size"],
           ].map(([k, v]) => (
             <div key={k}>
