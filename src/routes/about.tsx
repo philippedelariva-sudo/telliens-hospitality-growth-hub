@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/SiteChrome";
+import philPhoto from "@/assets/phil.jpg";
+import maxPhoto from "@/assets/max.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -14,8 +16,8 @@ export const Route = createFileRoute("/about")({
 });
 
 const team = [
-  { name: "Phil", role: "Co-Founder & Workshop Coordinator", bio: "A background in education, applied directly to hospitality training. That foundation shapes how every Telliens workshop is structured and delivered, while hands-on experience across three hotel brands keeps it grounded in what actually happens on the floor.", facts: ["Bachelor of Arts, Psychology", "Bachelor of Education", "OCT certified teacher", "Teaching across 4 school boards", "Worked at 3 hotel brands across North America", "Bilingual (English/French)"] },
-  { name: "Max", role: "Co-Founder", bio: "Several years in hotel operations across front office, guest services and rooms at properties in Canada and Europe. Special-services work at the Olympic Games shapes an approach to training that holds up when things get busy.", facts: ["6+ years in rooms operations & guest services", "Worked at 8 hotel brands, two continents", "Olympic Games special services", "Bilingual (English/French)"] },
+  { name: "Phil", photo: philPhoto, role: "Co-Founder & Workshop Coordinator", bio: "A background in education, applied directly to hospitality training. That foundation shapes how every Telliens workshop is structured and delivered, while hands-on experience across three hotel brands keeps it grounded in what actually happens on the floor.", facts: ["Bachelor of Arts, Psychology", "Bachelor of Education", "OCT certified teacher", "Teaching across 4 school boards", "Worked at 3 hotel brands across North America", "Bilingual (English/French)"] },
+  { name: "Max", photo: maxPhoto, role: "Co-Founder", bio: "Several years in hotel operations across front office, guest services and rooms at properties in Canada and Europe. Special-services work at the Olympic Games shapes an approach to training that holds up when things get busy.", facts: ["6+ years in rooms operations & guest services", "Worked at 8 hotel brands, two continents", "Olympic Games special services", "Bilingual (English/French)"] },
 ];
 
 function About() {
@@ -36,6 +38,7 @@ function About() {
             <article key={t.name} className="flex h-full flex-col rounded-lg border bg-card p-6 md:p-8">
               <h2 className="text-4xl">{t.name}</h2>
               <p className="mt-1 font-semibold text-primary">{t.role}</p>
+              <img src={t.photo} alt={t.name} className="mt-6 h-40 w-40 rounded-full object-cover object-top shadow-soft" />
               <p className="mt-4 text-muted-foreground">{t.bio}</p>
               <ul className="mt-auto flex flex-wrap gap-2 pt-6">
                 {t.facts.map((f) => <li key={f} className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">{f}</li>)}
