@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CtaBand } from "@/components/SiteChrome";
 import { CALENDLY, workshops } from "@/lib/content";
+import hero from "@/assets/hero-lobby.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
