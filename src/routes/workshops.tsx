@@ -20,7 +20,7 @@ function Workshops() {
       <section className="mx-auto max-w-6xl px-6 pt-20 text-center">
         <p className="eyebrow">Workshops we specialize in</p>
         <h1 className="mx-auto mt-4 max-w-3xl text-5xl md:text-6xl">Training that sticks after <span className="text-gradient">we leave.</span></h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">Each workshop is delivered in person, with capacity for 15 to 30 participants and options to accommodate additional staff on request. Online formats are also available.</p>
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">Each workshop is delivered in person, with capacity for 15 to 30 participants and options to accommodate additional staff on request. Online formats are also available, and every workshop can be delivered in English or French.</p>
       </section>
       <section className="mx-auto grid max-w-6xl gap-5 px-6 py-16 md:grid-cols-2">
         {workshops.map((w, i) => (
