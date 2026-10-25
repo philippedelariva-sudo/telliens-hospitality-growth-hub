@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CtaBand } from "@/components/SiteChrome";
 import philPhoto from "@/assets/phil.jpg";
-import maxPhoto from "@/assets/max.jpg";
 import { useCopy } from "@/lib/i18n";
 
 export const Route = createFileRoute("/about")({
@@ -28,7 +27,6 @@ const copy = {
     teamEyebrow: "Leadership team",
     team: [
       { name: "Phil", photo: philPhoto, role: "Co-Founder & Workshop Coordinator", bio: "A background in education, applied directly to hospitality training. That foundation shapes how every Telliens workshop is structured and delivered, while hands-on experience across three hotel brands keeps it grounded in what actually happens on the floor.", facts: ["Bachelor of Arts, Psychology", "Bachelor of Education", "Certified member, Ontario College of Teachers (OCT)", "Teaching across 4 school boards", "Worked at 3 hotel brands across North America", "Bilingual (English/French)"] },
-      { name: "Max", photo: maxPhoto, role: "Co-Founder", bio: "Several years in hotel operations across front office, guest services and rooms at properties in Canada and Europe. Special-services work at the 2024 Paris Olympics shapes an approach to training that holds up when things get busy.", facts: ["6+ years in rooms operations & guest services", "Worked at 8 hotel brands, two continents", "2024 Paris Olympics, special services", "Bilingual (English/French)"] },
     ],
   },
   fr: {
@@ -42,7 +40,6 @@ const copy = {
     teamEyebrow: "Notre équipe de direction",
     team: [
       { name: "Phil", photo: philPhoto, role: "Cofondateur et coordonnateur des ateliers", bio: "Un parcours en enseignement, appliqué directement à la formation hôtelière. Cette base façonne la structure et la présentation de chaque atelier Telliens, tandis qu'une expérience pratique auprès de trois chaînes hôtelières le garde ancré dans la réalité du terrain.", facts: ["Baccalauréat ès arts, psychologie", "Baccalauréat en éducation", "Membre certifié de l'Ordre des enseignantes et des enseignants de l'Ontario (OEEO)", "Enseignement dans 4 conseils scolaires", "Expérience auprès de 3 chaînes hôtelières en Amérique du Nord", "Bilingue (anglais/français)"] },
-      { name: "Max", photo: maxPhoto, role: "Cofondateur", bio: "Plusieurs années d'expérience dans l'exploitation hôtelière, couvrant la réception, le service à la clientèle et la gestion des chambres dans des établissements au Canada et en Europe. Un travail de services spéciaux aux Jeux olympiques de Paris 2024 façonne une approche de formation qui tient la route lorsque le rythme s'accélère.", facts: ["Plus de 6 ans d'expérience en gestion des chambres et service à la clientèle", "Expérience auprès de 8 chaînes hôtelières, sur deux continents", "Jeux olympiques de Paris 2024, services spéciaux", "Bilingue (anglais/français)"] },
     ],
   },
 };
