@@ -56,17 +56,19 @@ function About() {
         </div>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <p className="eyebrow">{c.teamEyebrow}</p>
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <p className="eyebrow text-center">{c.teamEyebrow}</p>
+        <div className="mx-auto mt-8 max-w-4xl space-y-6">
           {c.team.map((t) => (
-            <article key={t.name} className="flex h-full flex-col rounded-lg border bg-card p-6 md:p-8">
-              <h2 className="text-4xl">{t.name}</h2>
-              <p className="mt-1 font-semibold text-primary">{t.role}</p>
-              <img src={t.photo} alt={t.name} className="mt-6 aspect-[2/3] w-56 rounded-lg object-cover object-top shadow-soft md:w-64" />
-              <p className="mt-4 text-muted-foreground">{t.bio}</p>
-              <ul className="mt-auto flex flex-wrap gap-2 pt-6">
-                {t.facts.map((f) => <li key={f} className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">{f}</li>)}
-              </ul>
+            <article key={t.name} className="grid items-center gap-8 rounded-lg border bg-card p-6 md:grid-cols-[auto_1fr] md:p-10">
+              <img src={t.photo} alt={t.name} className="mx-auto aspect-[2/3] w-60 rounded-lg object-cover object-top shadow-soft md:w-72" />
+              <div>
+                <h2 className="text-4xl md:text-5xl">{t.name}</h2>
+                <p className="mt-1 font-semibold text-primary">{t.role}</p>
+                <p className="mt-4 text-lg text-muted-foreground">{t.bio}</p>
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {t.facts.map((f) => <li key={f} className="rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">{f}</li>)}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
