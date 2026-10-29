@@ -1,5 +1,6 @@
 export const CALENDLY = "https://calendly.com/phil-telliens/30min";
 export const EMAIL = "phil@telliens.com";
+export const LINKEDIN = "https://www.linkedin.com/in/philippe-de-la-riva";
 
 export const workshops = {
   en: [
