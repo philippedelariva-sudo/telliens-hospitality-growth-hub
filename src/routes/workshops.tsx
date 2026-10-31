@@ -19,7 +19,7 @@ const copy = {
   en: {
     eyebrow: "Workshops we specialize in",
     title: "Training that sticks after",
-    highlight: "we leave.",
+    highlight: "we leave",
     intro: "Each workshop is delivered in person, with capacity for 15 to 30 participants and options to accommodate additional staff on request. Online formats are also available, and every workshop can be delivered in English or French.",
     review: "All workshop content is reviewed and approved by a certified member of the Ontario College of Teachers prior to delivery, so every session is built on sound teaching practice.",
     customEyebrow: "Made for you",
@@ -29,7 +29,7 @@ const copy = {
   fr: {
     eyebrow: "Nos ateliers spécialisés",
     title: "Une formation qui perdure",
-    highlight: "après notre départ.",
+    highlight: "après notre départ",
     intro: "Chaque atelier est offert en personne, avec une capacité de 15 à 30 participants et la possibilité d'accueillir du personnel supplémentaire sur demande. Des formats en ligne sont également offerts, et chaque atelier peut être présenté en français ou en anglais.",
     review: "Tout le contenu des ateliers est révisé et approuvé par un membre certifié de l'Ordre des enseignantes et des enseignants de l'Ontario avant sa présentation, afin que chaque séance repose sur de solides pratiques pédagogiques.",
     customEyebrow: "Conçu pour vous",
