@@ -45,7 +45,7 @@ function Workshops() {
     <>
       <section className="mx-auto max-w-6xl px-6 pt-20 text-center">
         <p className="eyebrow">{c.eyebrow}</p>
-        <h1 className="mx-auto mt-4 max-w-3xl text-5xl md:text-6xl">{c.title} <span className="text-gradient">{c.highlight}</span></h1>
+        <h1 className="mx-auto mt-4 max-w-3xl text-5xl md:text-6xl">{c.title} {c.highlight}</h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">{c.intro}</p>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">{c.review}</p>
       </section>
